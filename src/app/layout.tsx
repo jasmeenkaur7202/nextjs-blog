@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <h1 className="text-center font-semibold text-xl">Global Layout Page</h1>
       <body className={inter.className}>{children}</body>
     </html>
   );
