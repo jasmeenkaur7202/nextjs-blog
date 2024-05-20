@@ -7,7 +7,6 @@ import React from 'react';
 
 const Navigation = () => {
   const router = usePathname();
-  console.log(router);
   
   return (
     <div className='flex pt-4 w-full justify-between'>
