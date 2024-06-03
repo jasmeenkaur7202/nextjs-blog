@@ -17,4 +17,6 @@ export const ABOUT_TEXT = `Welcome to our About page! Here, we'd like to tell yo
 At our core, we're passionate about storytelling. Whether it's through written articles, photography, or art, we believe in the power of storytelling to connect people, inspire change, and foster empathy.
 Our team is made up of passionate individuals from diverse backgrounds, each bringing their own unique talents and perspectives to the table. Together, we work tirelessly to ensure that our platform is a welcoming and inclusive space for all.
 So whether you're a seasoned writer, a budding artist, or simply someone with a story to share, we invite you to join us on this journey. Together, let's create a community where every voice is heard and every story is valued.
-Happy Reading!`
+Happy Reading!`;
+
+export const NO_BLOG_FOUND = 'No Blog Found'
