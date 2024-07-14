@@ -4,12 +4,20 @@ export const NAVIGATION_LINKS = [
     link: '/',
   },
   {
+    name: 'Sign In',
+    link: '/api/auth/signin',
+  },
+  {
     name: 'About',
     link: '/about',
   },
   {
     name: 'Blog',
     link: '/blog',
+  },
+  {
+    name: 'Signout',
+    link: '/api/auth/signout',
   },
 ];
 
