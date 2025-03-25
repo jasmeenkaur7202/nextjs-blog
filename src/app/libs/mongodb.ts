@@ -8,10 +8,17 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const connectMongoDB = async () => {
   try {
-    await mongoose.connect(MONGODB_URI);
+    // Add connection options to handle timeout issues
+    const options = {
+      serverSelectionTimeoutMS: 15000, // Increase from default 10000
+      socketTimeoutMS: 45000, // Increase from default 30000
+    };
+    
+    await mongoose.connect(MONGODB_URI, options);
     console.log("Connected to MongoDB.");
   } catch (error) {
-    console.log(error);
+    console.error("MongoDB connection error:", error);
+    throw error; // Rethrow to handle in the API route
   }
 };
 
